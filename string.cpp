@@ -14,7 +14,7 @@ String::String(const char* _cstr) {
 
 	length = templength;
 
-	start = new char[length]; 
+	start = new char[length + 1]; 
 
 	for (int i = 0; *(_cstr + i) != '\0'; i++) {
 		*(start + i) = *(_cstr + i);
