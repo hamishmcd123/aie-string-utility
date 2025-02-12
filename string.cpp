@@ -31,7 +31,8 @@ char& String::operator[] (size_t index) {
 			return *(start + index);
 		}
 		else {
-			throw(index);
+			std::cout << "error: cannot access outside string range";
+			exit(-1);
 		}
 }
 
@@ -78,16 +79,12 @@ String::String(const String& _str) {
 }
 
 const char& String::operator[] (size_t index) const {
-	try {
-		if (index < length) {
-			return *(start + index);
-		}
-		else {
-			throw(index);
-		}
+	if (index < length) {
+		return *(start + index);
 	}
-	catch (size_t index) {
-		std::cout << '\n' << "Exception Caught - You cannot access an index outside of range!";
+	else {
+		std::cout << "error: cannot access outside string range";
+		exit(-1);
 	}
 }
 

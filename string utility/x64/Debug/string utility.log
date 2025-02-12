@@ -1,7 +1,2 @@
 ﻿  main.cpp
-  string.cpp
-C:\Users\s242170\source\repos\string-utility\aie-string-utility\string.cpp(89,16): warning C4101: 'index': unreferenced local variable
-C:\Users\s242170\source\repos\string-utility\aie-string-utility\string.cpp(122,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
-C:\Users\s242170\source\repos\string-utility\aie-string-utility\string.cpp(92): warning C4715: 'String::operator[]': not all control paths return a value
   string utility.vcxproj -> C:\Users\s242170\source\repos\string-utility\aie-string-utility\x64\Debug\string utility.exe
