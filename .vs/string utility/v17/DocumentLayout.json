@@ -1,12 +1,84 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\string.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "string.hpp",
+              "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.hpp",
+              "RelativeDocumentMoniker": "testcases\\string.hpp",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.hpp",
+              "RelativeToolTip": "testcases\\string.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T00:31:36.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "string.cpp",
+              "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
+              "RelativeDocumentMoniker": "testcases\\string.cpp",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
+              "RelativeToolTip": "testcases\\string.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T00:31:34.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
+              "RelativeDocumentMoniker": "testcases\\main.cpp",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
+              "RelativeToolTip": "testcases\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T00:31:34.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T00:13:09.441Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
