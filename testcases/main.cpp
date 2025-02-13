@@ -73,7 +73,7 @@ int main() {
 		std::cout << "Test 6 - Equality operator done...\n";
 		String equalitytest = "THIS IS THA TASTTAST2";
 		if (teststring == equalitytest) {
-			testresults << "Test 6, Equality Operator, Succesful" << '\n';
+			testresults << "Test 6, Equality Operator, Successful" << '\n';
 			successful_tests++;
 		}
 		else {

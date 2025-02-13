@@ -296,8 +296,8 @@ std::istream& operator>>(std::istream& is, String& _str) {
 	if (s) {
 		while (is) {
 			char c = is.get();
-			if (std::isspace(c) || is.eof()) break;
-			if (std::isalnum(c)) {
+			if (is.eof() || !(std::isprint(c))) break;
+			if (std::isprint(c)) {
 				_str += c;
 			}
 		}
