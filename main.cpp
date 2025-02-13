@@ -8,9 +8,7 @@
 
 
 int main() {
-
 // Test Cases 
-
 	String teststring = "This is the test"; 
 	String teststring2 = "test2";
 	int successful_tests = 0;

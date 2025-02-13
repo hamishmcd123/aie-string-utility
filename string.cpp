@@ -1,11 +1,15 @@
 #include "string.hpp"
 #include <iostream>
 
+// Default constructor
 String::String() {
 	start = nullptr; 
 	length = 0;
 }
 
+
+// Constructor for using c-style strings
+// Example usage: String _str("This is a test string");
 String::String(const char* _cstr) {
 	int templength = 0;
 	for (int i = 0; *(_cstr + i) != '\0'; i++) {
@@ -22,9 +26,22 @@ String::String(const char* _cstr) {
 
 }
 
+// Returns the length of the string (excluding the null terminator character)
+// Example usage: 
+// String _str("hello");
+// std::cout << _str.Length();
+// Output : 5
+
 const size_t String::Length() {
 	return length;
 }
+
+
+// Subscript operator. Returns character is index [n].
+// Example usage: 
+// String _str("hello"); 
+// std::cout << _str[0]; 
+// Output : h
 
 char& String::operator[] (size_t index) {
 		if (index < length) {
@@ -36,6 +53,13 @@ char& String::operator[] (size_t index) {
 		}
 }
 
+
+// Definition for stream insertion operator. 
+// Example usage: 
+// String _str("hello");
+// std::cout << _str;
+// Output: hello
+
 std::ostream& operator<<(std::ostream& os, String& _str) {
 	for (int i = 0; i < (_str.Length()); i++) {
 		os << _str[i];
@@ -43,15 +67,28 @@ std::ostream& operator<<(std::ostream& os, String& _str) {
 	return os;
 }
 
+// Writes string to console. 
+// Example usage:
+// String _str("hello"); 
+// _str.WriteToConsole(); 
+// Output: hello
+
 void String::WriteToConsole() {
 	std::cout << *(this) << '\n';
 }
 
+// String destructor function.
 String::~String() {
 	if (start != nullptr) {
 		delete[] start;
 	}
 }
+
+// Converts string to lowercase. 
+// Example usage:
+// String _str("HELLO"); 
+// std::cout << _str.ToLower(); 
+// Output: hello
 
 String& String::ToLower() {
 	for (int i = 0; i < length; i++) {
@@ -61,6 +98,12 @@ String& String::ToLower() {
 	return *this;
 }
 
+// Converts string to uppercase.
+// Example usage:
+// String _str("hello"); 
+// std::cout << _str.ToUpper(); 
+// Output: HELLO
+
 String& String::ToUpper() {
 	for (int i = 0; i < length; i++) {
 		(*this)[i] = (char)(std::toupper((*this)[i]));
@@ -68,7 +111,7 @@ String& String::ToUpper() {
 	return *this;
 }
 
-
+// Copy constructor
 String::String(const String& _str) {
 	length = _str.length;
 	start = new char[length + 1];
@@ -78,6 +121,7 @@ String::String(const String& _str) {
 	start[length] = '\0';
 }
 
+// Const subscript operator. See subscript operator. 
 const char& String::operator[] (size_t index) const {
 	if (index < length) {
 		return *(start + index);
@@ -88,6 +132,12 @@ const char& String::operator[] (size_t index) const {
 	}
 }
 
+// Equality operator. Returns TRUE is two strings have the same contents. 
+// Example usage:
+// String _str1("hello");
+// String _str2("hello");
+// std::cout << (_str1 == _srt2); 
+// Output: 1
 
 bool operator==(const String& lhs, const String& rhs) {
 	// First check to see if lengths are even equal...
@@ -103,6 +153,13 @@ bool operator==(const String& lhs, const String& rhs) {
 
 	return true; 
 }
+
+// Appends one string to another. 
+// Example usage:
+// String _str1("hello"); 
+// String _str2("bello"); 
+// std::cout << _str1.Append(_str2); 
+// Output: hellobello
 
 String& String::Append(const String& _str) {
 
@@ -130,6 +187,13 @@ String& String::Append(const String& _str) {
 	return *this;
 }
 
+
+// Returns int corresponding to the index of first appearance of character. Returns -1 if character is not found. 
+// Example usage:
+// String _str("hello");
+// std::cout << _str.FindCharacter('e');
+// Output: 1
+
 int String::FindCharacter(const char& _chr) const {
 	int index = 0;
 	for (int i = 0; i < this->length; i++) {
@@ -141,6 +205,14 @@ int String::FindCharacter(const char& _chr) const {
 	return -1; 
 }
 
+// Replaces _findcharacter with _replacecharacter in a string. Returns int corresponding to the number of replacements. 
+// Example usage:
+// String _str("hello"); 
+// std::cout << _str.Replace('h','b') << '\n';
+// std::cout << _str; 
+// Output: 1
+// Output: bello
+
 int String::Replace(const char _findcharacter, const char _replacecharacter) {
 	int replacecount = 0; 
 	for (int i = 0; i < this->length; i++) {
@@ -151,6 +223,16 @@ int String::Replace(const char _findcharacter, const char _replacecharacter) {
 	}
 	return replacecount;
 }
+
+
+
+// Assignment operator. Replaces lhs with rhs. 
+// Example usage:
+// String _str1("hello");
+// String _str2("bello");
+// _str1 = _str2; 
+// std::cout << _str1; 
+// Output: bello
 
 String& String::operator=(const String& _str) {
 	if (!(*this == _str)) {
@@ -165,6 +247,12 @@ String& String::operator=(const String& _str) {
 	return *this;
 }
 
+// Less than operator. Returns true if the lhs String comes before the rhs String alphabetically.
+// Example usage: 
+// String _str1("abc"); 
+// String _str2("efg");
+// std::cout << (_str1 < _str2); 
+// Output: 1
 
 bool String::operator<(const String& _str) const {
 	int comparison = std::strcmp(this->start, _str.start);
@@ -176,6 +264,12 @@ bool String::operator<(const String& _str) const {
 	}
 }
 
+// Plus-equals operator; appends a single char onto the end of string. 
+// Example usage:
+// String _str1("mee"); 
+// _str1 += 'p'; 
+// std::cout << _str1; 
+// Output: meep
 
 String& operator+=(String& _str, const char _chr) {
 	size_t templength = _str.length + 1;
@@ -194,6 +288,8 @@ String& operator+=(String& _str, const char _chr) {
 	return _str;
 }
 
+
+// Stream extraction operator. 
 std::istream& operator>>(std::istream& is, String& _str) {
 	std::istream::sentry s(is);
 
@@ -210,6 +306,15 @@ std::istream& operator>>(std::istream& is, String& _str) {
 
 	return is;
 }
+
+
+// Requests input from console and stores it in the String. 
+// Example usage: 
+// String bello; 
+// bello = bello.ReadFromConsole(); 
+// User input: bello
+// std::cout << bello; 
+// output bello
 
 String& String::ReadFromConsole() {
 	std::cin.clear();
