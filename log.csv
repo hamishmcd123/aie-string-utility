@@ -1,0 +1,32 @@
+
+
+Date: 2025-02-13
+Time: 11:04:01
+Success Rate: 100%
+Test Case, Function, Outcome
+Test 0, Length, Successful
+Test 1, Append, Successful
+Test 2, ToLower, Successful
+Test 3, ToUpper, Successful
+Test 4, FindCharacter, Successful
+Test 5, Replace, Successful
+Test 6, Equality Operator, Succesful
+Test 7, Subscript Operator, Successful
+Test 8, Assignment Operator, Successful
+Test 9, LessThan Operator, Successful
+
+
+Date: 2025-02-13
+Time: 11:04:05
+Success Rate: 100%
+Test Case, Function, Outcome
+Test 0, Length, Successful
+Test 1, Append, Successful
+Test 2, ToLower, Successful
+Test 3, ToUpper, Successful
+Test 4, FindCharacter, Successful
+Test 5, Replace, Successful
+Test 6, Equality Operator, Succesful
+Test 7, Subscript Operator, Successful
+Test 8, Assignment Operator, Successful
+Test 9, LessThan Operator, Successful
