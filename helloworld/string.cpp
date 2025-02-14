@@ -32,12 +32,12 @@ String::String(const char* _cstr) {
 // std::cout << _str.Length();
 // Output : 5
 
-const size_t String::Length() {
+const size_t String::Length() const {
 	return length;
 }
 
 
-// Subscript operator. Returns character is index [n].
+// Subscript operator. Returns character at index [n].
 // Example usage: 
 // String _str("hello"); 
 // std::cout << _str[0]; 
@@ -60,7 +60,7 @@ char& String::operator[] (size_t index) {
 // std::cout << _str;
 // Output: hello
 
-std::ostream& operator<<(std::ostream& os, String& _str) {
+std::ostream& operator<<(std::ostream& os, const String& _str) {
 	for (int i = 0; i < (_str.Length()); i++) {
 		os << _str[i];
 	}
@@ -73,9 +73,16 @@ std::ostream& operator<<(std::ostream& os, String& _str) {
 // _str.WriteToConsole(); 
 // Output: hello
 
-void String::WriteToConsole() {
+const String& String::WriteToConsole() const {
 	std::cout << *(this) << '\n';
+	return *this;
 }
+
+String& String::WriteToConsole() {
+	std::cout << *(this) << '\n';
+	return *this;
+}
+
 
 // String destructor function.
 String::~String() {
@@ -289,6 +296,7 @@ String& operator+=(String& _str, const char _chr) {
 }
 
 
+
 // Stream extraction operator. 
 std::istream& operator>>(std::istream& is, String& _str) {
 	std::istream::sentry s(is);
@@ -296,8 +304,8 @@ std::istream& operator>>(std::istream& is, String& _str) {
 	if (s) {
 		while (is) {
 			char c = is.get();
-			if (std::isspace(c) || is.eof()) break;
-			if (std::isalnum(c)) {
+			if (is.eof() || !(std::isprint(c))) break;
+			if (std::isprint(c)) {
 				_str += c;
 			}
 		}

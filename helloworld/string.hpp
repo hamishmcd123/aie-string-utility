@@ -9,7 +9,7 @@ public:
 	
 	String(const String& _str);
 
-	const size_t Length();
+	const size_t Length() const;
 
 	String& Append(const String& _str);
 
@@ -23,11 +23,13 @@ public:
 
 	String& ReadFromConsole(); 
 
-	void WriteToConsole(); 
+	const String& WriteToConsole() const;
+
+	String& WriteToConsole(); 
 
 	bool friend operator==(const String& lhs, const String& rhs); 
 
-	friend std::ostream& operator<<(std::ostream& os, String& _str);
+	friend std::ostream& operator<<(std::ostream& os, const String& _str);
 
 	friend std::istream& operator>>(std::istream& is, String& _str);
 
