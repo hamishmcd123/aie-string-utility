@@ -1,7 +1,18 @@
 #include <iostream>
 #include <cctype>
+
+// File: string.hpp
+// Author: Hamish McDonald
+// Date 2025-02-14
+
+// This header file defines a basic string utility class that will make working with character arrays easier to manage.
+// Specifics about the usage of members functions can be found in string.cpp
+
+
 class String {
 public:
+
+	// Function prototyping
 
 	String(); 
 
@@ -48,5 +59,6 @@ public:
 private:
 	char* start; 
 	size_t length; 
+	// Private members variables of string class
 
 };
