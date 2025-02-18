@@ -262,7 +262,7 @@ String& String::operator=(const String& _str) {
 // Output: 1
 
 bool String::operator<(const String& _str) const {
-	if (start != nullptr) {
+	if (start != nullptr && _str.start != nullptr) {
 		int comparison = std::strcmp(this->start, _str.start);
 		if (comparison < 0) {
 			return true;

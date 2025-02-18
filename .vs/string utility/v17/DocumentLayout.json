@@ -46,8 +46,7 @@
               "RelativeToolTip": "helloworld\\helloworld.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-14T00:39:34.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T00:39:34.655Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "helloworld\\string.hpp",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-18T21:54:31.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T21:54:31.588Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "testcases\\main.cpp",
               "ViewState": "AgIAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-18T21:54:16.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T21:54:16.608Z"
             },
             {
               "$type": "Document",
@@ -83,7 +80,7 @@
               "RelativeDocumentMoniker": "testcases\\string.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
               "RelativeToolTip": "testcases\\string.cpp",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAAACkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAAAAcBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-18T21:54:16.066Z",
               "EditorCaption": ""
@@ -96,7 +93,7 @@
               "RelativeDocumentMoniker": "helloworld\\string.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp",
               "RelativeToolTip": "helloworld\\string.cpp",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAFIBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAUwAMBAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-14T00:39:34.097Z",
               "EditorCaption": ""
