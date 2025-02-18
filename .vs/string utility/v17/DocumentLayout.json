@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|solutionrelative:helloworld\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\helloworld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|solutionrelative:helloworld\\helloworld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|solutionrelative:helloworld\\string.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\helloworld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|solutionrelative:helloworld\\helloworld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|solutionrelative:helloworld\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,43 +34,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "helloworld.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\helloworld.cpp",
               "RelativeDocumentMoniker": "helloworld\\helloworld.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\helloworld.cpp",
               "RelativeToolTip": "helloworld\\helloworld.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-14T00:39:34.655Z"
+              "WhenOpened": "2025-02-14T00:39:34.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "string.hpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.hpp",
               "RelativeDocumentMoniker": "helloworld\\string.hpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.hpp",
               "RelativeToolTip": "helloworld\\string.hpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-18T21:54:31.588Z"
+              "WhenOpened": "2025-02-18T21:54:31.588Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
               "RelativeDocumentMoniker": "testcases\\main.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
               "RelativeToolTip": "testcases\\main.cpp",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-18T21:54:16.608Z"
+              "WhenOpened": "2025-02-18T21:54:16.608Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,20 +83,20 @@
               "RelativeDocumentMoniker": "testcases\\string.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
               "RelativeToolTip": "testcases\\string.cpp",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAAAAcBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-18T21:54:16.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "string.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp",
               "RelativeDocumentMoniker": "helloworld\\string.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp",
               "RelativeToolTip": "helloworld\\string.cpp",
-              "ViewState": "AgIAAPsAAAAAAAAAAAAUwAMBAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAABQBAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-14T00:39:34.097Z",
               "EditorCaption": ""
@@ -108,7 +111,8 @@
               "RelativeToolTip": "testcases\\string.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-14T00:36:40.43Z"
+              "WhenOpened": "2025-02-14T00:36:40.43Z",
+              "EditorCaption": ""
             }
           ]
         }

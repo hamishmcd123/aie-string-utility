@@ -3,7 +3,7 @@
 
 // Default constructor
 String::String() {
-	start = nullptr; 
+	start = nullptr;
 	length = 0;
 }
 
@@ -18,7 +18,7 @@ String::String(const char* _cstr) {
 
 	length = templength;
 
-	start = new char[length + 1]; 
+	start = new char[length + 1];
 
 	for (int i = 0; *(_cstr + i) != '\0'; i++) {
 		*(start + i) = *(_cstr + i);
@@ -44,13 +44,13 @@ const size_t String::Length() const {
 // Output : h
 
 char& String::operator[] (size_t index) {
-		if (index < length) {
-			return *(start + index);
-		}
-		else {
-			std::cout << "error: cannot access outside string range";
-			exit(1);
-		}
+	if (index < length) {
+		return *(start + index);
+	}
+	else {
+		std::cout << "error: cannot access outside string range";
+		exit(1);
+	}
 }
 
 
@@ -151,14 +151,14 @@ bool operator==(const String& lhs, const String& rhs) {
 	if (lhs.length != rhs.length) {
 		return false;
 	}
-	
+
 	for (int i = 0; i < lhs.length; i++) {
 		if (lhs[i] != rhs[i]) {
 			return false;
 		}
 	}
 
-	return true; 
+	return true;
 }
 
 // Appends one string to another. 
@@ -170,11 +170,11 @@ bool operator==(const String& lhs, const String& rhs) {
 
 String& String::Append(const String& _str) {
 
-	size_t templength = this->length + _str.length; 
+	size_t templength = this->length + _str.length;
 
 	char* newstart = new char[templength + 1];
 
-	for (int i = 0; i < (this->length) ; i++) {
+	for (int i = 0; i < (this->length); i++) {
 		newstart[i] = (*this)[i];
 	}
 
@@ -205,11 +205,11 @@ int String::FindCharacter(const char& _chr) const {
 	int index = 0;
 	for (int i = 0; i < this->length; i++) {
 		if (_chr == (*this)[i]) {
-			return index; 
+			return index;
 		}
 		index++;
 	}
-	return -1; 
+	return -1;
 }
 
 // Replaces _findcharacter with _replacecharacter in a string. Returns int corresponding to the number of replacements. 
@@ -221,10 +221,10 @@ int String::FindCharacter(const char& _chr) const {
 // Output: bello
 
 int String::Replace(const char _findcharacter, const char _replacecharacter) {
-	int replacecount = 0; 
+	int replacecount = 0;
 	for (int i = 0; i < this->length; i++) {
 		if ((*this)[i] == _findcharacter) {
-			(*this)[i] = _replacecharacter; 
+			(*this)[i] = _replacecharacter;
 			replacecount++;
 		}
 	}
@@ -262,7 +262,7 @@ String& String::operator=(const String& _str) {
 // Output: 1
 
 bool String::operator<(const String& _str) const {
-	if (start != nullptr && _str.start != nullptr) {
+	if (length > 0 && _str.length > 0) {
 		int comparison = std::strcmp(this->start, _str.start);
 		if (comparison < 0) {
 			return true;
@@ -271,11 +271,15 @@ bool String::operator<(const String& _str) const {
 			return false;
 		}
 	}
-	else {
-		std::cout << "error: you cannot compare with an empty string.";
-		exit(1);
+	else if (length == 0 && _str.length != 0) {
+		return true;
 	}
-
+	// This encompasses both the case where 
+	// length != 0 && _str.length == 0
+	// length == 0 && _str.length == 0
+	else {
+		return false;
+	}
 }
 
 // Plus-equals operator; appends a single char onto the end of string. 
@@ -291,12 +295,12 @@ String& operator+=(String& _str, const char _chr) {
 	for (int i = 0; i < _str.length; i++) {
 		newstart[i] = _str[i];
 	}
-	newstart[templength - 1] = _chr; 
+	newstart[templength - 1] = _chr;
 	newstart[templength] = '\0';
 
-	delete[] _str.start; 
+	delete[] _str.start;
 
-	_str.start = newstart; 
+	_str.start = newstart;
 	_str.length = templength;
 
 	return _str;
@@ -334,6 +338,6 @@ std::istream& operator>>(std::istream& is, String& _str) {
 String& String::ReadFromConsole() {
 	std::cin.clear();
 	std::cin.ignore(std::cin.rdbuf()->in_avail());
-	std::cin >> *this; 
+	std::cin >> *this;
 	return *this;
 }

@@ -3,6 +3,6 @@
 
 int main() {
 	String helloworld = "Hello, World!"; 
-	std::cout << helloworld;
+	std::cout << helloworld; 
 	return 0;
 }

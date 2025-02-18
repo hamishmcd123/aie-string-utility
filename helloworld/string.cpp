@@ -262,7 +262,7 @@ String& String::operator=(const String& _str) {
 // Output: 1
 
 bool String::operator<(const String& _str) const {
-	if (start != nullptr && _str.start != nullptr) {
+	if (length > 0 && _str.length > 0) {
 		int comparison = std::strcmp(this->start, _str.start);
 		if (comparison < 0) {
 			return true;
@@ -271,11 +271,15 @@ bool String::operator<(const String& _str) const {
 			return false;
 		}
 	}
-	else {
-		std::cout << "error: you cannot compare with an empty string.";
-		exit(1);
+	else if (length == 0 && _str.length != 0) {
+		return true;
 	}
-
+	else {
+	// This encompasses both the case where 
+	// length != 0 && _str.length == 0
+	// length == 0 && _str.length == 0
+		return false; 
+	}
 }
 
 // Plus-equals operator; appends a single char onto the end of string. 
