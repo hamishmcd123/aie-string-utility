@@ -49,7 +49,7 @@ char& String::operator[] (size_t index) {
 		}
 		else {
 			std::cout << "error: cannot access outside string range";
-			exit(-1);
+			exit(1);
 		}
 }
 
@@ -262,13 +262,20 @@ String& String::operator=(const String& _str) {
 // Output: 1
 
 bool String::operator<(const String& _str) const {
-	int comparison = std::strcmp(this->start, _str.start);
-	if (comparison < 0) {
-		return true;
+	if (start != nullptr) {
+		int comparison = std::strcmp(this->start, _str.start);
+		if (comparison < 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	else {
-		return false;
+		std::cout << "error: you cannot compare with an empty string.";
+		exit(1);
 	}
+
 }
 
 // Plus-equals operator; appends a single char onto the end of string. 
