@@ -254,6 +254,8 @@ String& String::operator=(const String& _str) {
 	return *this;
 }
 
+
+
 // Less than operator. Returns true if the lhs String comes before the rhs String alphabetically.
 // Example usage: 
 // String _str1("abc"); 
@@ -339,5 +341,14 @@ String& String::ReadFromConsole() {
 	std::cin.clear();
 	std::cin.ignore(std::cin.rdbuf()->in_avail());
 	std::cin >> *this;
+	return *this;
+}
+
+
+// Clears string and sets contents to a nullptr; 
+String& String::Clear() {
+	delete[] start; 
+	length = 0;
+	start = nullptr; 
 	return *this;
 }

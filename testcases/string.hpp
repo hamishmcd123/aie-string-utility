@@ -55,6 +55,8 @@ public:
 
 	String& operator= (const String& _str); 
 
+	String& Clear(); 
+
 	~String();
 
 private:
