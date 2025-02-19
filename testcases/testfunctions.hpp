@@ -15,3 +15,5 @@ void replaceTest(String& _str1, String& _str2, String& _str3, std::stringstream&
 void equalityTest(String& _str1, String& _str2, String& _str3, std::stringstream& testsresults, int& successful_tests);
 void subscriptTest(String& _str1, String& _str2, String& _str3, std::stringstream& testsresults, int& successful_tests);
 void lessThanTest(String& _str1, String& _str2, String& _str3, std::stringstream& testsresults, int& successful_tests);
+void assignmentTest(String& _str1, String& _str2, String& _str3, std::stringstream& testsresults, int& successful_tests);
+

@@ -332,14 +332,38 @@ void lessThanTest(String& _str1, String& _str2, String& _str3, std::stringstream
 	String abc = "abc";
 	String abcd = "abcd";
 	if ((abc < abcd)) {
-	std::cout << GREEN << "Test 27, LessThan - abc and abcd, Successful" << CLEAR << '\n';
-	testsresults << "Test 27, LessThan - abc and abcd, Successful" << '\n';
-	successful_tests++;
+		std::cout << GREEN << "Test 27, LessThan - abc and abcd, Successful" << CLEAR << '\n';
+		testsresults << "Test 27, LessThan - abc and abcd, Successful" << '\n';
+		successful_tests++;
 	}
 	else {
 		std::cout << RED << "Error: less than abc and abcd incorrect. Expected 1 got: " << (abc < abcd) << CLEAR << '\n';
 		testsresults << "Test 27, LessThan - abc and abcd, Failed" << '\n';
+	}
+	// Test 28 - abc and efg
+	String efg = "efg"; 
+	if ((abc < efg)) {
+		std::cout << GREEN << "Test 28, LessThan - abc and efg, Successful" << CLEAR << '\n';
+		testsresults << "Test 28, LessThan - abc and efg, Successful" << '\n';
+		successful_tests++;
+	
+	}
+	else {
+		std::cout << RED << "Error: less than abc and efg incorrect. Expected 1 got: " << (abc < efg) << CLEAR << '\n';
+		testsresults << "Test 27, LessThan - abc and efg, Failed" << '\n';
+	}
+	// Test 29 - abcd and abc
+	if (!(abcd < abc)) {
+		std::cout << GREEN << "Test 29, LessThan - abcd and abc, Successful" << CLEAR << '\n';
+		testsresults << "Test 29, LessThan - abcd and abc, Successful" << '\n';
+		successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: less than abcd and abcd incorrect. Expected 0 got :" << (abcd < abc) << CLEAR << '\n';
+		testsresults << "Test 29, LessThan - abcd and abc, Failed" << '\n';
 
 	}
 }
+
+
 
