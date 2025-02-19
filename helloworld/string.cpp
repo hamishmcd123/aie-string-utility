@@ -3,7 +3,9 @@
 
 // Default constructor
 String::String() {
-	start = nullptr;
+	start = new char[1];
+	start[0] = '\0';
+	std::cout << start[0];
 	length = 0;
 }
 
@@ -48,8 +50,7 @@ char& String::operator[] (size_t index) {
 		return *(start + index);
 	}
 	else {
-		std::cout << "error: cannot access outside string range";
-		exit(1);
+		return (start)[length];
 	}
 }
 
@@ -134,8 +135,7 @@ const char& String::operator[] (size_t index) const {
 		return *(start + index);
 	}
 	else {
-		std::cout << "error: cannot access outside string range";
-		exit(-1);
+		return (start)[length];
 	}
 }
 
@@ -349,6 +349,7 @@ String& String::ReadFromConsole() {
 String& String::Clear() {
 	delete[] start;
 	length = 0;
-	start = nullptr;
+	start = new char[1];
+	start[0] = '\0';
 	return *this;
 }

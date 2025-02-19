@@ -23,13 +23,16 @@ int main() {
 	toUpperTest(teststring, teststring2, teststring3, testresults, successful_tests);
 	findCharacterTest(teststring, teststring2, teststring3, testresults, successful_tests);
 	replaceTest(teststring, teststring2, teststring3, testresults, successful_tests);
+	equalityTest(teststring, teststring2, teststring3, testresults, successful_tests);
+	subscriptTest(teststring, teststring2, teststring3, testresults, successful_tests);
+
 
 	std::time_t t = std::time(nullptr); 
 	std::tm tm = *std::localtime(&t);
 
 	std::stringstream timess;
 	timess << "Date: " << std::put_time(&tm, "%F") << "\n" << "Time: " << std::put_time(&tm, "%T") 
-	<< "\n" << "Success Rate: " << std::to_string(successful_tests / 9 * 100) << "%" << '\n';
+	<< "\n" << "Success Rate: " << std::to_string(successful_tests / 20.0f * 100) << "%" << '\n';
 	std::string time = timess.str(); 
 	std::string results = testresults.str();
 
