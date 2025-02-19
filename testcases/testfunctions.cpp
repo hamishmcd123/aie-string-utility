@@ -266,6 +266,7 @@ void subscriptTest(String& _str1, String& _str2, String& _str3, std::stringstrea
 	if ((_str1[1] == 'e')) {
 		std::cout << GREEN << "Test 21, Subscript - non-empty, Successful" << CLEAR << '\n';
 		testsresults << "Test 21, Subscript - non-empty, Successful" << '\n';
+		successful_tests++;
 	}
 	else {
 		std::cout << RED << "Error: subscript non empty not correct. Expected e got: " << _str1[1] << CLEAR << '\n';
@@ -275,6 +276,7 @@ void subscriptTest(String& _str1, String& _str2, String& _str3, std::stringstrea
 	if ((_str3[1]) == '\0') {
 		std::cout << GREEN << "Test 22, Subscript - empty, Successful" << CLEAR << '\n';
 		testsresults << "Test 22, Subscript - empty, Successful" << '\n';
+		successful_tests++;
 	}
 	else {
 		std::cout << RED << "Error: subscript empty not correct. Expected NULL got: " << _str3[1] << CLEAR << '\n';
@@ -283,5 +285,54 @@ void subscriptTest(String& _str1, String& _str2, String& _str3, std::stringstrea
 }
 void lessThanTest(String& _str1, String& _str2, String& _str3, std::stringstream& testsresults, int& successful_tests) {
 	resetTestStrings(_str1, _str2, _str3);
+	// Test 23 - Identical strings
+	if (!(_str1 < _str1)) {
+		std::cout << GREEN << "Test 23, LessThan - identical strings, Successful" << CLEAR << '\n';
+		testsresults << "Test 23, LessThan - identical strings, Successful" << '\n';
+		successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: lessthan identical not correct. Expected 0 got: " << (_str1 < _str1) << CLEAR << '\n';
+		testsresults << "Test 23, LessThan, identical strings, Failed";
+	}
+	// Test 24 - empty string and non-empty
+	if ((_str3 < _str1)) {
+		std::cout << GREEN << "Test 24, LessThan - empty and non-empty, Successful" << CLEAR << '\n';
+		testsresults << "Test 24, LessThan - empty and non-empty, Successful" << '\n';
+		successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: lessthan empty and non-empty not correct. Expected 1 got : " << (_str3 < _str1) << CLEAR << '\n';
+		testsresults << "Test 24, LessThan - empty and non-empty, Failed" << '\n';
+	}
 
+	// Test 25 - Both empty 
+	String temp;
+	if (!(_str3 < temp)) {
+		std::cout << GREEN << "Test 25, LessThan - both empty, Successful" << CLEAR << '\n';
+		testsresults << "Test 25, LessThan - both empty, Successful" << '\n';
+		successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: lessthan both empty not correct. Expected 0 got :" << (_str3 < temp) << CLEAR << '\n';
+		testsresults << "Test 25, LessThan - both empty, Failed" << '\n';
+	}
+
+	// Test 26 - non-empty and empty
+	if (!(_str1 < _str3)) {
+		std::cout << GREEN << "Test 26, LessThan - non-empty and empty, Successful" << CLEAR << '\n';
+		testsresults << "Test 26, LessThan - non-empty and empty, Successful" << '\n';
+	}
+	else {
+		std::cout << RED << "Error: lessthan non-empty and empty. Expected 0 got :" << (_str1 < _str3) << CLEAR << '\n';
+		testsresults << "Test 26, LessThan - non-empty and empty, Failed" << '\n';
+	}
+	// Test 27 - abc and abcd
+	String abc = "abc";
+	String abcd = "abcd";
+	if ((abc < abcd)) {
+	std::cout << GREEN << "Test 27, LessThan - abc and abcd, Successful" << CLEAR << '\n';
+	testsresults << "Test 27, LessThan - abc and abcd, Successful" << '\n';
+	}
 }
+

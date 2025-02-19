@@ -345,7 +345,7 @@ String& String::ReadFromConsole() {
 }
 
 
-// Clears string and sets contents to a nullptr; 
+// Clears string and sets contents to a null-terminator character.
 String& String::Clear() {
 	delete[] start;
 	length = 0;
