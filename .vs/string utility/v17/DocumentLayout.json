@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\testfunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{46C3DC66-C8AD-408E-BE04-AFF777B51263}|helloworld\\helloworld.vcxproj|solutionrelative:helloworld\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\testfunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "string.cpp",
+              "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp",
+              "RelativeDocumentMoniker": "helloworld\\string.cpp",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\helloworld\\string.cpp",
+              "RelativeToolTip": "helloworld\\string.cpp",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAAwE0BAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-19T22:05:19.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "string.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
               "RelativeDocumentMoniker": "testcases\\string.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
               "RelativeToolTip": "testcases\\string.cpp",
-              "ViewState": "AgIAAA8AAAAAvqKNlXIvwDcBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAAwGMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-19T04:10:30.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
               "RelativeDocumentMoniker": "testcases\\main.cpp",
@@ -51,8 +68,7 @@
               "RelativeToolTip": "testcases\\main.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-19T03:46:10.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T03:46:10.32Z"
             },
             {
               "$type": "Document",
@@ -62,7 +78,7 @@
               "RelativeDocumentMoniker": "testcases\\testfunctions.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.cpp",
               "RelativeToolTip": "testcases\\testfunctions.cpp",
-              "ViewState": "AgIAADUBAAAAAAAAAAASwEoBAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAAAEkBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-18T23:21:29.725Z",
               "EditorCaption": ""

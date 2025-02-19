@@ -266,7 +266,7 @@ String& String::operator=(const String& _str) {
 bool String::operator<(const String& _str) const {
 	if (length > 0 && _str.length > 0) {
 		int comparison = std::strcmp(this->start, _str.start);
-		if (comparison < 0) {
+		if (comparison > 0) {
 			return true;
 		}
 		else {
@@ -345,7 +345,7 @@ String& String::ReadFromConsole() {
 }
 
 
-// Clears string and sets contents to a nullptr; 
+// Clears string and sets contents to a null-terminator character.
 String& String::Clear() {
 	delete[] start;
 	length = 0;

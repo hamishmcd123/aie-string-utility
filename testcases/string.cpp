@@ -266,7 +266,7 @@ String& String::operator=(const String& _str) {
 bool String::operator<(const String& _str) const {
 	if (length > 0 && _str.length > 0) {
 		int comparison = std::strcmp(this->start, _str.start);
-		if (comparison < 0) {
+		if (comparison > 0) {
 			return true;
 		}
 		else {

@@ -322,6 +322,7 @@ void lessThanTest(String& _str1, String& _str2, String& _str3, std::stringstream
 	if (!(_str1 < _str3)) {
 		std::cout << GREEN << "Test 26, LessThan - non-empty and empty, Successful" << CLEAR << '\n';
 		testsresults << "Test 26, LessThan - non-empty and empty, Successful" << '\n';
+		successful_tests++;
 	}
 	else {
 		std::cout << RED << "Error: lessthan non-empty and empty. Expected 0 got :" << (_str1 < _str3) << CLEAR << '\n';
@@ -333,6 +334,12 @@ void lessThanTest(String& _str1, String& _str2, String& _str3, std::stringstream
 	if ((abc < abcd)) {
 	std::cout << GREEN << "Test 27, LessThan - abc and abcd, Successful" << CLEAR << '\n';
 	testsresults << "Test 27, LessThan - abc and abcd, Successful" << '\n';
+	successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: less than abc and abcd incorrect. Expected 1 got: " << (abc < abcd) << CLEAR << '\n';
+		testsresults << "Test 27, LessThan - abc and abcd, Failed" << '\n';
+
 	}
 }
 
