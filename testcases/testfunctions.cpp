@@ -165,6 +165,7 @@ void findCharacterTest(String& _str1, String& _str2, String& _str3, std::strings
 	if ((_str3.FindCharacter('z') == -1)) {
 		std::cout << GREEN << "Test 13, FindCharacter - empty string, Successful" << CLEAR << '\n';
 		testsresults << "Test 13, FindCharacter - empty string, Successful" << '\n';
+		successful_tests++;
 	}
 	else {
 		std::cout << RED << "Error: findcharacter empty string not correct. Expected -1 got: " << _str3.FindCharacter('z') << CLEAR << '\n';
@@ -383,6 +384,22 @@ void assignmentTest(String& _str1, String& _str2, String& _str3, std::stringstre
 		testsresults << "Test 31, Assignment - self assignment, Successful" << '\n';
 		successful_tests++;
 	}
+	else {
+		std::cout << RED << "Error: self assignment incorrect. Expected Test string 2 got: " << _str2 << CLEAR << '\n';
+		testsresults << "Test 31, Assignment - self assignment, Failed " << '\n';
+	}
+	// Test 32 - Assigning non-empty to empty; 
+	_str1 = _str3; 
+	if ((_str1[0] == '\0')) {
+		std::cout << GREEN << "Test 32, Assignment- assigning empty to non-empty, Successful" << CLEAR << '\n';
+		testsresults << "Test 32, Assignment - assigning empty to non-empty, Successful" << '\n';
+		successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: assigning empty to non-empty incorrect. Expected: NULL. Got: " << _str1 << CLEAR << '\n';
+		testsresults << "Test 32, Assignment - assigning empty to non-empty, Failed" << '\n';
+	}
+
 
 
 

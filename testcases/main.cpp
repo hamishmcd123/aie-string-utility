@@ -33,7 +33,7 @@ int main() {
 
 	std::stringstream timess;
 	timess << "Date: " << std::put_time(&tm, "%F") << "\n" << "Time: " << std::put_time(&tm, "%T") 
-	<< "\n" << "Success Rate: " << std::to_string(successful_tests / 20.0f * 100) << "%" << '\n';
+	<< "\n" << "Success Rate: " << std::to_string(successful_tests / 33.0f * 100) << "%" << '\n';
 	std::string time = timess.str(); 
 	std::string results = testresults.str();
 

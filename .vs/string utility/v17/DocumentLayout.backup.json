@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\testfunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\testfunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D1212D56-850E-4EF1-ADB3-602978D98EAE}|testcases\\string utility.vcxproj|solutionrelative:testcases\\testfunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,46 +34,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "string.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
               "RelativeDocumentMoniker": "testcases\\string.cpp",
               "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\string.cpp",
               "RelativeToolTip": "testcases\\string.cpp",
-              "ViewState": "AgIAAFkBAAAAAAAAAAAAAAwBAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADcBAAAAAAAAAAAswFYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-19T04:10:30.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
               "RelativeDocumentMoniker": "testcases\\main.cpp",
-              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp",
-              "RelativeToolTip": "testcases\\main.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\main.cpp*",
+              "RelativeToolTip": "testcases\\main.cpp*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-19T03:46:10.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "testfunctions.cpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.cpp",
               "RelativeDocumentMoniker": "testcases\\testfunctions.cpp",
-              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.cpp",
-              "RelativeToolTip": "testcases\\testfunctions.cpp",
-              "ViewState": "AgIAADwBAAAAAAAAAAAmwFEBAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.cpp*",
+              "RelativeToolTip": "testcases\\testfunctions.cpp*",
+              "ViewState": "AgIAAIABAAAAAAAAAAAmwIsBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-18T23:21:29.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "testfunctions.hpp",
               "DocumentMoniker": "C:\\Users\\s242170\\source\\repos\\string-utility\\aie-string-utility\\testcases\\testfunctions.hpp",
               "RelativeDocumentMoniker": "testcases\\testfunctions.hpp",
