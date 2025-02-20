@@ -21,6 +21,7 @@ String::String(const char* _cstr) {
 	length = templength;
 
 	start = new char[length + 1];
+	start[length] = '\0';
 
 	for (int i = 0; *(_cstr + i) != '\0'; i++) {
 		*(start + i) = *(_cstr + i);
@@ -265,52 +266,26 @@ String& String::operator=(const String& _str) {
 
 bool String::operator<(const String& _str) const {
 	if (length > 0 && _str.length > 0) {
-
 		int comparison = 0;
-
-		// Identifies which of the two strings are shorter, and then compares the contents of both up to the final character of the shorter string. 
-		if (length < _str.length) {
-			comparison = std::strncmp(start, _str.start, length);
-		}
-
-		else if (length > _str.length) {
-		comparison = std::strncmp(start, _str.start, _str.length);
-	
-		}
-
-		// Even if both strings are the same length, we still need to compare them.
-		else {
-		comparison = std::strncmp(start, _str.start, length);
-		}
-		
-		// Naturally if the first character that does not match has lower value in str1 than in str2 we return true. 
-		if (comparison  < 0) {
+		comparison = strcmp(start, _str.start);
+		if (comparison < 0) {
 			return true;
 		}
-
-		// If both strings have the same contents up to this point, then if the second string is longer than the first string, the first string
-		// should be before the second string lexicographically
-		else if (comparison == 0) {
-			if (_str.length > length) {
-				return 1;
-			}
-		else{
-				return 0;
-			}
+		else {
+			return false;
 		}
 	}
 
-
 	// If either length is zero...
-	else if (length == 0 && _str.length != 0) {
+		else if (length == 0 && _str.length != 0) {
 		return true;
-	}
-	// This encompasses both the case where 
-	// length != 0 && _str.length == 0
-	// length == 0 && _str.length == 0
-	else {
+		}
+		// This encompasses both the case where 
+		// length != 0 && _str.length == 0
+		// length == 0 && _str.length == 0
+		else {
 		return false;
-	}
+		}
 }
 
 // Plus-equals operator; appends a single char onto the end of string. 

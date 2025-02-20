@@ -26,7 +26,7 @@ int main() {
 	equalityTest(teststring, teststring2, teststring3, testresults, successful_tests);
 	subscriptTest(teststring, teststring2, teststring3, testresults, successful_tests);
 	lessThanTest(teststring, teststring2, teststring3, testresults, successful_tests);
-
+	assignmentTest(teststring, teststring2, teststring3, testresults, successful_tests);
 
 	std::time_t t = std::time(nullptr); 
 	std::tm tm = *std::localtime(&t);

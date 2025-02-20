@@ -357,13 +357,34 @@ void lessThanTest(String& _str1, String& _str2, String& _str3, std::stringstream
 		std::cout << GREEN << "Test 29, LessThan - abcd and abc, Successful" << CLEAR << '\n';
 		testsresults << "Test 29, LessThan - abcd and abc, Successful" << '\n';
 		successful_tests++;
-	}
-	else {
-		std::cout << RED << "Error: less than abcd and abcd incorrect. Expected 0 got :" << (abcd < abc) << CLEAR << '\n';
+	} else {
+		std::cout << RED << "Error: less than abcd and abc incorrect. Expected 0 got :" << (abcd < abc) << CLEAR << '\n';
 		testsresults << "Test 29, LessThan - abcd and abc, Failed" << '\n';
 
 	}
 }
+void assignmentTest(String& _str1, String& _str2, String& _str3, std::stringstream& testsresults, int& successful_tests) {		
+	resetTestStrings(_str1, _str2, _str3); 
+	// Test 30 - One string to another string
+	_str1 = _str2; 
+	if ((_str1 == _str2)) {
+		std::cout << GREEN << "Test 30, Assignment - self assign non-self, Successful" << CLEAR << '\n';
+		testsresults << "Test 30, Assignment - self assign non-self, Successful" << '\n';
+		successful_tests++;
+	}
+	else {
+		std::cout << RED << "Error: self assign non-self incorrect. Expected Test string 2 got: " << _str1 << CLEAR << '\n';
+		testsresults << "Test 30, Assignment - self assign non-self, Failed" << '\n';
+	}
+
+	// Test 31 - Self-assignment check
+	if ((_str2 = _str2) == _str2) {
+		std::cout << GREEN << "Test 31, Assignment - self assignment, Successful" << CLEAR << '\n';
+		testsresults << "Test 31, Assignment - self assignment, Successful" << '\n';
+		successful_tests++;
+	}
 
 
 
+}
+ 
