@@ -6,7 +6,7 @@
 #include <ctime>
 #include "string.hpp"
 #include "testfunctions.hpp"
-
+#include <thread>
 
 int main() {
 
@@ -16,7 +16,6 @@ int main() {
 
 	int successful_tests = 0;
 	std::stringstream testresults; 
-
 	lengthTest(teststring, teststring3, testresults, successful_tests);
 	appendTest(teststring, teststring2, teststring3, testresults, successful_tests);
 	toLowerTest(teststring, teststring2, teststring3, testresults, successful_tests);
@@ -41,6 +40,5 @@ int main() {
 	output.open("log.csv", std::ios::app);
 	output << '\n' << '\n' << time << "Test Case, Function, Outcome" << "\n" << results;
 	output.close();
-
 	return 0;
 }
